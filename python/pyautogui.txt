@@ -1,0 +1,40 @@
+NAME 	  : pyautogui
+
+INSTALL   : pip install pyautogui
+
+IMPORT    : import pyautogui
+
+USAGE     : pyautogui[FUNCTION]
+
+FUNCTIONS :-
+
+.size()                                  ===   returns a list with two values Width, Height
+
+.position()                              ===   returns a list with current x and y mouse coordinates
+
+.move(x,y)                               ===   move the mouse x,y coordinates relative to current mouse position
+.moveTo(500, 500, duration=2)            ===   takes 2 seconds to move to the coordinates.
+
+.dragRel(x,y)                            ===   Drag the mouse to x,y pixels from the current position. You can use -ve sign for reverse direction.
+
+.click()                                 ===   Click the mouse.
+
+.doubleClick()                           ===   Double click
+
+.click('button.png')                     ===   find the button image occurs and click it.
+
+.write('Hello world!', interval=0.25)    ===   Type with quarter-second pause in between each key
+
+.press('esc')                            ===   Press the esc key
+
+.keyDown('shift')                        ===   to Hold the shift key
+
+.keyUp('shift')                          ===   to release the shift key
+
+.hotkey('ctrl', 'c')                     ===   To press the combination key
+
+.screenshot()                            ===   To take a screenshot.
+
+.locateCenterOnScreen('image.png')       ===   Provides the exact middle coordinates of the image on the screen.
+
+.displayMousePosition()                  ===   Locate the realtime mouse position.

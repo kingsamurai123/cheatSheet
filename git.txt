@@ -1,0 +1,20 @@
+NAME    : git commands
+
+INSTALL : sudo apt-get install git
+
+USAGE   : git [OPTION]
+
+OPTION  :
+
+add        :-  for staging the changes.
+               can use arguments with file names to stage only a particular file.
+               EXAMPLE: git add cheats.sh                    #stages only cheats.sh
+                        git add -p                           #stages all files
+
+commit     :-  to commit the changes to the repository
+                git commit -m "message"   #commits changes with the message.
+
+pull       :-  pulls all the files which are not present in your local repository.
+
+push       :-  pushes the data into the github repository
+
