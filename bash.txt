@@ -1,0 +1,35 @@
+bash = bourne again shell
+
+which and locate === is used to find the file location
+
+To set the path use ==== export PATH="$PATH:path_you_want_to_add"    #This is for a temporary path
+
+To take multiple inputs from the user USE:
+echo "enter 3 names"
+read var1 var2 var3
+OR
+read -p 'username : ' user_name
+echo "username : $user_name"
+
+To take the password as input::
+read -sp 'password : ' pass_name
+echo "password : $pass_name"
+
+
+TO take input as an array
+read -a names
+echo "Names : ${names[0]}, ${names[1]}"
+
+$# contains total number of arguments
+$@ contains all the arguments passed to the script
+
+if loop
+if [ ]
+then
+    statements
+elif
+then
+    statements
+else
+    statements
+fi
