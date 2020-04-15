@@ -1,0 +1,24 @@
+file should be named as "filename.desktop"
+
+the file should be placed in the "/usr/share/applications/filename.desktop" directory
+
+the file should contain details like such::
+
+[Desktop Entry]
+Name=Bitwarden
+Comment=FOSS Password Manager
+GenericName=Password Manager
+Exec=path_to_the_app_image
+Icon=simply_name_the_application_name   #Icon appears if it is present in the system
+Type=Application
+StartupNotify=false  #Does not start automatically at the boot time 
+
+
+save it and close
+
+now to validate the file
+type
+$desktop-file-validate filename.desktop
+
+If there are no errors you can view the application in the application menu.
+
