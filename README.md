@@ -1,2 +1,5 @@
 # cheatSheet
-Python cheats
+Cheats for
+Python
+Bash
+Git
