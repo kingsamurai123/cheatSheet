@@ -1,5 +1,5 @@
 # cheatSheet
 Cheats for
-Python
-Bash
-Git
+1) Python
+2) Bash
+3) Git
