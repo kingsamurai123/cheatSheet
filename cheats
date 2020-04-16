@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 #################################################################
 #          cheat codes.......  remember gta?                    #
@@ -13,13 +13,82 @@ while [[ $answer == 'y' ]] || [[ $answer == 'Y' ]];
 do
 
 
-if [ $# -eq 0 ];
-then echo "Cheats are being activated. Wait for it.!!!!!!!!!!"
-     echo "For git press 1, for bash press 2, for python press 3"
-else
-if [ $ -eq  ]
-fi
+# if [ $# -eq 0 ];
+# then echo "Cheats are being activated. Wait for it.!!!!!!!!!!"
+#      echo "For Python press 1, for Bash press 2, for Git press 3"
+# else
+# if [ $ -eq  ]
+# fi
 
+echo "Cheats are being activated. Wait for it.!!!!!!!!!!"
+echo "For Python press 1, for Bash press 2, for Git press 3"
+read dir_input
+case $dir_input in                               #fetching the required directory
+    a)
+    echo -n "Press the respective key"
+    echo -n "a) bs4 ( Beautiful Soup )"
+    echo -n "b) File Operations"
+    echo -n "c) OS"
+    echo -n "d) PYAUTOGUI"
+    echo -n "e) SELENIUM"
+    read python_input
+    case $python_input in                        #fetching the required file in python folder
+        a )
+        cat python/bs4.txt
+        ;;
+        b )
+        cat python/fileoperations.txt
+        ;;
+        c )
+        cat python/os.txt
+        ;;
+        d )
+        cat python/pyautogui.txt
+        ;;
+        e )
+        cat python/selenium.txt
+        ;;
+        * )
+        echo "Unknown answer"
+        ;;
+    esac                                      #end of python data
+    b)
+    echo -n "Press the respective key"
+    echo -n "1) Bash 2)Desktop Entry"
+    read bash_input
+    case $bash_input in
+        1)
+        cat bash.txt
+        ;;
+        2)
+        cat Desktop_Entry_for_AppImage.txt
+        ;;
+        *)
+        echo -n "Invalid input"
+        ;;                                   #end of bash files
+    esac
+    3 )                                       #for git files
+    echo -n "Select the respective key"
+    echo -n "1)Small and Useful commands    2) Commands from git itself in a pdf file"
+    read git_input
+    case $git_input in
+        1)
+        echo -n "Displaying git commands"
+        cat git.txt
+        ;;
+        2)
+        echo -n "Displaying the pdf"
+        gio open git-cheat-sheet-education.pdf
+        ;;
+        *)
+        echo -n "Invalid input"
+        ;;
+    esac                                       #end of git files
+    *)
+    echo -n "No direstory is selected"
+    ;;
+esac                                         #End of first case statement
+    
 
 echo "Do you wish to continue y/n?"
 read answer

@@ -11,6 +11,7 @@ OR
 read -p 'username : ' user_name
 echo "username : $user_name"
 
+
 To take the password as input::
 read -sp 'password : ' pass_name
 echo "password : $pass_name"
@@ -20,8 +21,10 @@ TO take input as an array
 read -a names
 echo "Names : ${names[0]}, ${names[1]}"
 
+
 $# contains total number of arguments
 $@ contains all the arguments passed to the script
+
 
 if loop
 if [ ]

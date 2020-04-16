@@ -1,9 +1,26 @@
-# cat python/pyautogui.txt
+#!/bin/bash
 
-answer=(y Y)
-while [[ $answer == 'y' ]] || [[ $answer == 'Y' ]];
-do
-echo "enter answer y/n"
-read answer
-done
-echo $answer
+#answer=(y Y)
+#while [[ $answer == 'y' ]] || [[ $answer == 'Y' ]];
+#do
+#echo "enter answer y/n"
+#read answer
+#done
+#echo $answer
+
+read value
+case $value in
+    '1')
+    echo -n "1"
+    read sec
+    case $sec in
+        a)echo "a";;
+    esac
+    ;;
+    2)
+    echo -n "2"
+    ;;
+    *)
+    echo -n "NO Number"
+    ;;
+esac
