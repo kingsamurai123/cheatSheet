@@ -10,11 +10,19 @@ add        :-  for staging the changes.
                can use arguments with file names to stage only a particular file.
                EXAMPLE: git add cheats.sh                    #stages only cheats.sh
                         git add -p                           #stages all files
+                        git add .                            #same as before (stages all files) ##recommended by the git itself
 
 commit     :-  to commit the changes to the repository
-                git commit -m "message"   #commits changes with the message.
+                git commit -m "message"   #commits changes with the message without a descryption.
+                Or you can simply type "git commit" and press enter, a new vi editor will appear. 
+                In that you can type first line for the message and leave a line blank and type the description you like.
 
 pull       :-  pulls all the files which are not present in your local repository.
 
 push       :-  pushes the data into the github repository
+
+status     :-  For the status about the local repository compared to the github repository.
+
+log        :-  Provides the log details of the commits you have made till now.
+
 
