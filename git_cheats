@@ -1,2 +1,37 @@
 #!/bin/bash
 echo "!!!!!!!!!!! Starting git cheats !!!!!!!!!!!!!"
+
+answer_git=(y Y)                                       #initilize the variables
+git_simple=$HOME/cheatSheet/git/git.txt
+github_sheet=$HOME/cheatSheet/git/git-cheat-sheet-education.pdf     #end of variables
+
+while [[ $answer_git == 'y' ]] || [[ $answer_git == 'Y' ]];
+
+do
+
+echo -e " 1) Simple yet elegant commands \n 2) git commands by github itself in pdf \n "
+echo -n " Choose your answer ;- "
+read input_git
+case $input_git in
+1) 
+echo -e "Displaying simple git \n"
+cat $git_simple
+;;
+2)
+echo -e "Displaying Github sheet\n"
+evince $github_sheet            #To view the pdf files use evince file
+;;
+*)
+echo -e "Invalid Option\n"
+;;
+esac
+
+
+echo -n "Do you wish to view another file y/n? "
+read answer_git
+
+done
+echo "Process Aborted"
+
+
+
