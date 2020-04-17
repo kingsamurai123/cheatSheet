@@ -8,19 +8,23 @@
 #done
 #echo $answer
 
-read value
-case $value in
-    '1')
-    echo -n "1"
-    read sec
-    case $sec in
-        a)echo "a";;
-    esac
-    ;;
-    2)
-    echo -n "2"
-    ;;
-    *)
-    echo -n "NO Number"
-    ;;
-esac
+# read value
+# case $value in
+#     '1')
+#     echo -n "1"
+#     read sec
+#     case $sec in
+#         a)echo "a";;
+#     esac
+#     ;;
+#     2)
+#     echo -n "2"
+#     ;;
+#     *)
+#     echo -n "NO Number"
+#     ;;
+# esac
+
+
+filee=$HOME/cheatSheet/git/git.txt
+cat $filee
