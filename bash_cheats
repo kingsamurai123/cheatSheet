@@ -1,4 +1,34 @@
 #!/bin/bash
 echo "!!!!!!!!!!! Starting Bash cheats !!!!!!!!!!!"
 
+answer_bash=(y Y)                                       #initilize the variables
+bash_file1=$HOME/cheatSheet/bash_files/bash.txt
+bash_desktop_entry=$HOME/cheatSheet/bash_files/Desktop_Entry_for_AppImage.txt     #end of variables
 
+while [[ $answer_bash == 'y' ]] || [[ $answer_bash == 'Y' ]];
+
+do
+
+echo -e " 1) Bash Commands \n 2) Syntax for creating a desktop entry for AppImages \n "
+echo -n " Choose your answer ;- "
+read input_bash
+case $input_bash in
+1) 
+echo -e "Displaying bash commands \n"
+cat $bash_file1
+;;
+2)
+echo -e "Displaying AppImage menu bar creation\n"
+cat $bash_desktop_entry
+;;
+*)
+echo -e "Invalid Option\n"
+;;
+esac
+
+
+echo -n "Do you wish to view another file y/n? "
+read answer_bash
+
+done
+echo "Process Aborted"
