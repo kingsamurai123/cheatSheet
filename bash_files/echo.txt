@@ -8,6 +8,8 @@ echo -e "\n\t\b"
 Coloring text using echo
 Syntax:
 echo -e "\033[style_action;foreground;background[m]message\033[0m"
+Or 
+echo -e "\e[style_action;foreground;background[m]message\e[0m"
 
 STYLE_ACTION values:
 Plain         0
