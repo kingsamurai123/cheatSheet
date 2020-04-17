@@ -1,4 +1,51 @@
 #!/bin/bash
 echo "!!!!!!!!!!! Starting python cheats !!!!!!!!!!!!!"
 
+answer_python=(y Y)                                       #initilize the variables
+bs4=$HOME/cheatSheet/python/bs4.txt
+fileops=$HOME/cheatSheet/python/fileoperations.txt
+os=$HOME/cheatSheet/python/os.txt
+pyautogui=$HOME/cheatSheet/python/pyautogui.txt
+selenium=$HOME/cheatSheet/python/selenium.txt      #end of variables
+
+while [[ $answer_python == 'y' ]] || [[ $answer_python == 'Y' ]];
+
+do
+
+echo -e " 1) bs4 ( Beautiful Soup ) \n 2) fileoperations \n 3) OS \n 4) pyautogui \n 5) selenium \n"
+echo -n " Choose Your Option ;- "
+read input_python
+case $input_python in
+1) 
+echo -e "Displaying Beautiful Soup\n"
+cat $bs4
+;;
+2)
+echo -e "Displaying File Operation Commands\n"
+cat $fileops  
+;;
+3)
+echo -e "Displaying OS\n"
+cat $os
+;;
+4)
+echo -e "Displaying pyautogui\n"
+cat $pyautogui
+;;
+5)
+echo -e "Displaying selenium\n"
+cat $selenium
+;;
+*)
+echo -e "Invalid Option\n"
+;;
+esac
+
+
+echo -n "Do you wish to view another file y/n? "
+read answer_python
+
+done
+echo "Process Aborted"
+
 
