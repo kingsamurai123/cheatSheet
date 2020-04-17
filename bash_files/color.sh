@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "\033[5;32;40msravan\033[0m"
+echo -e "\e[5;32;40msravan\e[0m"
