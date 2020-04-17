@@ -11,6 +11,8 @@ OR
 read -p 'username : ' user_name
 echo "username : $user_name"
 
+To take an esccape charater interpreter in echo command use:
+echo -e "the backslash ( \ ) character works in this command"
 
 To take the password as input::
 read -sp 'password : ' pass_name
